@@ -1,0 +1,73 @@
+body {
+  background-color: #EEEEEE;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100px;
+  font-size: 20px;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+button {
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+pre {
+  padding: 4px;
+  background-color: #FEFEFE;
+  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+}
+
+.green {
+  background-color: #116314;
+}
+
+.red {
+  background-color: #631114;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #0066cc;
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Caesar-Chiffre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+{% block body %}
+	<h1>Caesar cipher</h1>
+  <form method="POST" action="/">
+    <label>Text:</label>
+    <textarea name="text">{{ text }}</textarea>
+    <label>Verschiebung:</label>
+    <input type="number" min=1 max=26 name="shift" value="{{ shift or 1 }}">
+    <button type="submit" name="encrypt" class="red" value="1">Verschlüsseln</button>
+    <button type="submit" name="decrypt" class="green" value="1">Entschlüsseln</button>
+  </form>
+  {% if result %}
+    <pre>{{ result }}</pre>
+  {% endif %}
+{% endblock %}
+<a href="https://github.com/Finn10111/caesar-chiffre">source code on github</a>
+</body>
+</html>
+
